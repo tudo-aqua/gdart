@@ -1,0 +1,12 @@
+[submodule "spout"]
+	path = spout
+	url = https://github.com/tudo-aqua/spout.git
+[submodule "mx"]
+	path = mx
+	url = https://github.com/graalvm/mx.git
+[submodule "verifier-stub"]
+	path = verifier-stub
+	url = https://github.com/tudo-aqua/verifier-stub.git
+[submodule "dse"]
+	path = dse
+	url = https://github.com/tudo-aqua/dse.git
