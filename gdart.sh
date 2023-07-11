@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # Copyright (C) 2023, Automated Quality Assurance Group,
 # TU Dortmund University, Germany. All rights reserved.
 #
@@ -129,7 +130,6 @@ echo "compiling: $JAVAC -cp $classpath $mainjava"
 $JAVAC -cp $classpath $mainjava
 if [[ $? -ne 0 ]]; then
   echo "Could not compile main class"
-  echo "== DONT-KNOW"
   exit 1
 fi
 
