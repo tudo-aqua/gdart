@@ -15,13 +15,13 @@
 
 set -e
 
-git submodule init
+git submodule update --init
 
 # SPouT
 #
 yes | ./mx/mx fetch-jdk --jdk-id labsjdk-ce-17 --strip-contents-home --to .
 pushd SPouT/espresso;
-  ../../mx/mx --env native-ce --java-home ../../labsjdk-ce-17-jvmci-22.2-b06 build
+  ../../mx/mx --env native-ce --java-home ../../labsjdk-ce-17-jvmci-23.0-b01 build
 popd
 GVM=`find spout/sdk/mxbuild -name "GRAALVM_ESPRESSO_NATIVE_CE_JAVA17" -type d`
 GVM_BIN=`find $GVM -name "bin" -type d`
@@ -41,4 +41,3 @@ popd
 pushd verifier-stub
   mvn package
 popd
-

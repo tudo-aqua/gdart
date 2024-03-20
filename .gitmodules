@@ -1,5 +1,5 @@
 [submodule "spout"]
-	path = spout
+	path = SPouT
 	url = https://github.com/tudo-aqua/spout.git
 [submodule "mx"]
 	path = mx
