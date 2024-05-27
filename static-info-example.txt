@@ -1,0 +1,4 @@
+class A { A() }
+class C {}
+class B extends A, C { B(), B(II) }
+
