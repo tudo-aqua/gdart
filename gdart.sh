@@ -44,6 +44,7 @@ function usage() {
   echo "    dse.bounds.step       step width (increase of bounds) when using bounds iteratively"
   echo "    dse.bounds.iter       no. of bounded solving attempts before dropping bounds"
   echo "    dse.bounds.type       fibonacci: uses fibonacci seq. from index 2 (1, 2, 3, 5, ...) as steps"
+  echo "    static.info           static information on class inheritance and instantiation"
   echo "    jconstraints.multi=disableUnsatCoreChecking=[true|false]"
   echo ""
 }
@@ -171,6 +172,6 @@ printf 'crashes in concolic executor:     %4s\n' $buggy
 printf 'unexpected paths for models:      %4s\n' $diverged
 printf 'skipped (assumptions/unsupported):%4s\n' $skipped
 
-rm -rf $tmpdir 
-rm _gdart.log
-rm _gdart.err
+#rm -rf $tmpdir 
+#rm _gdart.log
+#rm _gdart.err
