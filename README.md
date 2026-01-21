@@ -15,13 +15,13 @@
 
 - DSE 
     ``` 
-    ./gdart.sh -d Example1 ../examples/
+    ./gdart.sh -d Example1 ./examples/
     ```
 - with data-flow taint:
     ``` 
-    ./gdart.sh -d -t DATA Example2 ../examples/
+    ./gdart.sh -d -t DATA Example2 ./examples/
     ```
 - with information flow: 
     ``` 
-    ./gdart.sh -d -t INFORMATION Example3 ../examples/
+    ./gdart.sh -d -t INFORMATION Example3 ./examples/
     ```
