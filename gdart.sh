@@ -44,6 +44,7 @@ function usage() {
   echo "    dse.bounds.step       step width (increase of bounds) when using bounds iteratively"
   echo "    dse.bounds.iter       no. of bounded solving attempts before dropping bounds"
   echo "    dse.bounds.type       fibonacci: uses fibonacci seq. from index 2 (1, 2, 3, 5, ...) as steps"
+  echo "    static.info           static information on class inheritance and instantiation (filename)"
   echo "    jconstraints.multi=disableUnsatCoreChecking=[true|false]"
   echo ""
 }
